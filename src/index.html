@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de Senha</title>
+    <link rel="stylesheet" href="output.css" />
+     <link rel="stylesheet" href="style.css" />
+     <style>
+  input[type="range"] {
+    accent-color: #f80505;
+  }
+    input[type="checkbox"] {
+    accent-color: #f80505;
+    width: 20px;
+  }  
+</style>
+  </head>
+  <body class=" bg-neutral-800">
+    <div class="sombra"> 
+      
+    </div>
+    <div class="mae flex justify-center items-center flex-col min-h-screen shadow-2xl shadow-black">
+      <div class="w-180 rounded-3xl p-10 shadow-2xl shadow-black" style="background-color: rgba(255, 255, 255, 0.06);">
+      <h1 class="text-3xl text-white pb-3">Gerador Automático de Senha</h1>
+      <input type="text" name="senha" class="bg-neutral-400 p-4 w-160 rounded-2xl mb-10 shadow-2xl shadow-black" />
+      <div class="bg-neutral-400 p- w-10 rounded-2xl p-10 text-lg flex flex-row font-medium shadow-2xl shadow-black" >
+        <div class="collun flex flex-col">
+ <div class="">
+          <input class="h-4" type="checkbox" id="letrasmaiusculas" />
+          <label class="font-(family-name:open sans) ">Letras Maiusculas</label>
+        </div>
+         <div class="">
+          <input
+          class="h-4"
+            type="checkbox"
+            name="letrasminusculas"
+            id="letrasminusculas"
+          />
+          <label>Letras Minusculas</label>
+        </div>
+        <div class="">
+          <input class="h-4" type="checkbox" name="simbolos" id="simbolos"/> 
+          <label>Simbolos</label>
+        </div>
+        <div class="">
+          <input class="h-4" type="checkbox" name="numeros" id="checkbox" />
+               <label>Números</label>
+        </div>
+        </div>
+       
+    <div class="tabela-flex flex-col justify-center">
+  <label>Número de Caracteres</label>
+  <div>
+  <input 
+    class=""
+    type="range"
+    min="8"
+    max="20"
+    name="numeroscaracteres"
+    id="numeroscaracteres"
+  />
+  <!-- ✅ Aqui aparece o valor do range -->
+  <span id="valorRange" class="text-black ml-2"></span>
+  </div>
+<script>
+  const slider = document.getElementById("numeroscaracteres");
+const output = document.getElementById("valorRange");
+
+output.textContent = slider.value;
+
+slider.addEventListener("input", function() {
+  output.textContent = this.value;
+})
+</script>
+</div>
+      </div>
+            <div class="bg-red-800 m-10 pl-10 pr-10 p-2 rounded-3xl hover:bg-red-600  text-white" >
+  <button>Gerar Senha</button>
+          </div>
+      </div>
+    </div>
+      </div>
+  </body>
+</html>

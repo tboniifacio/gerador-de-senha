@@ -1,0 +1,42 @@
+/* Classes de largura customizadas */
+.w-96 {
+  width: 384px;
+}
+
+.w-80 {
+  width: 320px;
+}
+
+.w-185 {
+  width: 740px;
+}
+
+.w-170 {
+  width: 680px;
+}
+
+.w-160 {
+  width: 640px;
+}
+
+.w-90 {
+  width: 360px;
+}
+
+.bg-red-800 {
+max-width: 200px;
+margin: auto;
+margin-top: 30px;
+text-align: center;
+}
+
+
+.tabela-flex {
+    margin-left: 200px;
+    margin-top: 25px;
+}
+
+h1 {
+    font-weight:bold;
+    text-align: center;
+    margin-bottom: 20px;}
