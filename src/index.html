@@ -23,16 +23,16 @@
     <div class="mae flex justify-center items-center flex-col min-h-screen shadow-2xl shadow-black">
       <div class="w-180 rounded-3xl p-10 shadow-2xl shadow-black" style="background-color: rgba(255, 255, 255, 0.06);">
       <h1 class="text-3xl text-white pb-3">Gerador Automático de Senha</h1>
-      <input type="text" name="senha" class="bg-neutral-400 p-4 w-160 rounded-2xl mb-10 shadow-2xl shadow-black" />
+      <form>
+      <input type="text" id="InSenha" name="senha" class="bg-neutral-400 p-4 w-160 rounded-2xl mb-10 shadow-2xl shadow-black" readonly />
       <div class="bg-neutral-400 p- w-10 rounded-2xl p-10 text-lg flex flex-row font-medium shadow-2xl shadow-black" >
         <div class="collun flex flex-col">
  <div class="">
-          <input class="h-4" type="checkbox" id="letrasmaiusculas" />
+          <input class="h-4" type="checkbox" id="letrasmaiusculas" name="letrasmaiusculas" />
           <label class="font-(family-name:open sans) ">Letras Maiusculas</label>
         </div>
          <div class="">
-          <input
-          class="h-4"
+          <input class="h-4"
             type="checkbox"
             name="letrasminusculas"
             id="letrasminusculas"
@@ -44,7 +44,7 @@
           <label>Simbolos</label>
         </div>
         <div class="">
-          <input class="h-4" type="checkbox" name="numeros" id="checkbox" />
+          <input class="h-4" type="checkbox" name="numeros" id="num" />
                <label>Números</label>
         </div>
         </div>
@@ -63,7 +63,16 @@
   <!-- ✅ Aqui aparece o valor do range -->
   <span id="valorRange" class="text-black ml-2"></span>
   </div>
-<script>
+</div>
+      </div>
+            <div class="bg-red-800 m-10 pl-10 pr-10 p-2 rounded-3xl hover:bg-red-600  text-white" >
+  <button id="Submit">Gerar Senha</button>
+          </div>
+          </form>
+      </div>
+    </div>
+      </div>
+      <script>
   const slider = document.getElementById("numeroscaracteres");
 const output = document.getElementById("valorRange");
 
@@ -73,13 +82,6 @@ slider.addEventListener("input", function() {
   output.textContent = this.value;
 })
 </script>
-</div>
-      </div>
-            <div class="bg-red-800 m-10 pl-10 pr-10 p-2 rounded-3xl hover:bg-red-600  text-white" >
-  <button>Gerar Senha</button>
-          </div>
-      </div>
-    </div>
-      </div>
+<script src="script.js"></script>
   </body>
 </html>
