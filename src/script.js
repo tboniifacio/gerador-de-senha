@@ -1,8 +1,10 @@
-const gerar = document.querySelector("#Submit")
+
 const frm = document.querySelector("form")
+const resp1 = document.querySelector("#InSenha")
 
 
-frm.addEventListener("click", () => {
+frm.addEventListener("submit", (e) => {
+    e.preventDefault()
 
 let resposta = ""
 
@@ -38,4 +40,15 @@ let resposta = ""
             return
         }
 
+
+        let senha = ""
+        for(let i = 0; i < numCaracteres; i++){
+             
+        let sorteio = Math.floor(Math.random() * resposta.length)
+        senha += resposta[sorteio]
+
+    
+           
+        }
+        resp1.value = senha
 })

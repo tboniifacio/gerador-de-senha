@@ -20,10 +20,10 @@
     <div class="sombra"> 
       
     </div>
+      <form>
     <div class="mae flex justify-center items-center flex-col min-h-screen shadow-2xl shadow-black">
       <div class="w-180 rounded-3xl p-10 shadow-2xl shadow-black" style="background-color: rgba(255, 255, 255, 0.06);">
       <h1 class="text-3xl text-white pb-3">Gerador Automático de Senha</h1>
-      <form>
       <input type="text" id="InSenha" name="senha" class="bg-neutral-400 p-4 w-160 rounded-2xl mb-10 shadow-2xl shadow-black" readonly />
       <div class="bg-neutral-400 p- w-10 rounded-2xl p-10 text-lg flex flex-row font-medium shadow-2xl shadow-black" >
         <div class="collun flex flex-col">
@@ -66,12 +66,13 @@
 </div>
       </div>
             <div class="bg-red-800 m-10 pl-10 pr-10 p-2 rounded-3xl hover:bg-red-600  text-white" >
-  <button id="Submit">Gerar Senha</button>
+  <input type="submit" value="Gerar Senha">
           </div>
-          </form>
+         
       </div>
     </div>
       </div>
+       </form>
       <script>
   const slider = document.getElementById("numeroscaracteres");
 const output = document.getElementById("valorRange");
