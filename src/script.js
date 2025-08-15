@@ -1,6 +1,14 @@
 
 const frm = document.querySelector("form")
 const resp1 = document.querySelector("#InSenha")
+const slider = document.getElementById("numeroscaracteres");
+const output = document.getElementById("valorRange");
+
+output.textContent = slider.value;
+
+slider.addEventListener("input", function() {
+  output.textContent = this.value;
+})
 
 
 frm.addEventListener("submit", (e) => {

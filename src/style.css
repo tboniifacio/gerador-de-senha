@@ -32,11 +32,136 @@ text-align: center;
 
 
 .tabela-flex {
-    margin-left: 200px;
+    margin-left: 180px;
     margin-top: 25px;
+    gap: 30px;
 }
 
 h1 {
     font-weight:bold;
     text-align: center;
     margin-bottom: 20px;}
+
+#InSenha {
+  font-weight:bold ;
+  text-align: center;
+  font-size: large;
+}
+
+.bg-neutral-400{
+  max-width: 100%;
+  width: 97%
+}
+
+/*  Mobile */
+@media (max-width: 768px) {
+  .mae {
+    padding: 1rem;
+  }
+  
+  .mae > div {
+    width: 95% !important;
+    max-width: 400px;
+    padding: 1.5rem !important;
+    margin: 0 auto;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 1.5rem !important;
+    margin-bottom: 1rem;
+  }
+  
+  #InSenha {
+    width: 100% !important;
+    max-width: 400px;
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+  
+  .bg-neutral-400 {
+
+    max-width: 100%;
+    width: 22rem;
+
+    flex-direction: column !important;
+    padding: 1rem !important;
+    gap: 1rem;
+  }
+  
+  .collun {
+    width: 100%;
+    gap:0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items:center
+    
+  }
+  
+  .collun > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .tabela-flex {
+    margin-left: 0 !important;
+    margin-top: 1rem !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .tabela-flex label {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .tabela-flex input[type="range"] {
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .bg-red-800 {
+    max-width: 100% ;
+    width: 100%;
+
+    padding: 0.75rem !important;
+  }
+  
+
+  .bg-red-800 input[type="submit"] {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .range-numeros{
+    text-align: center;
+  }
+}
+
+/* Tablet*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  .mae > div {
+    width: 80% !important;
+    max-width: 600px;
+  }
+  
+  .tabela-flex {
+    margin-left: 70px !important;
+  }
+  
+  #InSenha {
+    width: 100% !important;
+    max-width: 500px;
+  }
+    .range-numeros{
+    text-align: center;
+  }
+}
